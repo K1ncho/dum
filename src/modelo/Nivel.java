@@ -22,4 +22,8 @@ public class Nivel {
 //		demonios.removeAll((Collection<?>) demonios.stream().filter(demonio -> demonio.estoyMuerto()));
 		
 	}
+	
+	public Boolean estaCompletado() {
+		return demonios.stream().allMatch(demonio -> demonio.estoyMuerto());
+	}
 }
