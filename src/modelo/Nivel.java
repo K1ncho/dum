@@ -16,4 +16,10 @@ public class Nivel {
 		}	
 		return demonioMasDuro;
 	}
+	
+	public void limpiar() {
+		demonios.removeIf(demonio -> demonio.estoyMuerto());
+//		demonios.removeAll((Collection<?>) demonios.stream().filter(demonio -> demonio.estoyMuerto()));
+		
+	}
 }

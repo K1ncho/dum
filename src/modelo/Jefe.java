@@ -9,4 +9,9 @@ public class Jefe extends Demonio {
 			cantidadAtaquesParaEliminarme--;
 		}
 	}
+	
+	@Override
+	public Boolean estoyMuerto() {
+		return cantidadAtaquesParaEliminarme <=0;
+	}
 }

@@ -11,9 +11,4 @@ public class Humanoide extends Demonio {
 			marine.recibirRegalos(arma);
 		}
 	}
-
-	private boolean estoyMuerto() {
-		return getHP() <=0;
-	}
-
 }
